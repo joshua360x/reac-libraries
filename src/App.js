@@ -3,9 +3,11 @@ import './App.css';
 import React from 'react';
 import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
 import arrayData from './arrayData';
+// import averCreditCardNum from './dataChange';
+
 
 function App() {
-  console.log(arrayData);
+  // console.log(arrayData);
   return (
     <div className="App">
       <VictoryChart domainPadding={20}>
@@ -29,7 +31,7 @@ function App() {
           alignment="start"
           animate={{
             duration: 2000,
-            onLoad: { duration: 1000 }
+            onLoad: { duration: 1000 },
           }}
         />
       </VictoryChart>
